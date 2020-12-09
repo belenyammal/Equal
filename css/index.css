@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*--------------------------header------------------------------------------------------------------*/
+header{
+    color: #d9937e;
+    background: #f9efec;
+    padding: 1%;
+    position: sticky;
+    top: 0px;
+}
+header h1{
+    width: 60%;
+    display: inline-block;
+}
+header nav{
+    width: 30%;
+    display: inline-block;
+
+}
+ul{
+    list-style: none;
+}
+header nav li{
+    display: inline-block;
+    position: relative;
+    margin-right: 3%;
+    
+}
+header a{
+    color: #d9937e;
+    text-decoration: none;
+    padding: 5%;    
+    
+}
+header #contactoHeader{
+    background-color: #d9937e ;
+    color: #f9efec;
+    
+}
+
+ul ul{
+    position: absolute;
+    background-color: #f9efec;
+    width: 100%;
+    top: 40px;
+    display: none;
+}
+ul ul li{
+    display: block;
+    padding: 3%;
+}
+ul li:hover ul{ display: block;}
+/*--------------------------img principal------------------------------------------------------------------*/
+
+#imgPrincipal{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/imgPrincipal.jpg);
+    background-size: cover;
+}
+/*--------------------------footer------------------------------------------------------------------*/
+footer{
+    width: 100%;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer #piePagina{
+    background-color: #d9937e;
+    color: white;
+    width: 100%;
+    
+}
+#footerContacto, #footerNavegacion, #footerRedes{
+    display: inline-block;
+    width: 20%;
+    margin: 2% 6%;
+}
+footer #copyright{
+    background-color: #d4846c;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+#copyright p{
+    display: inline-block;
+    width: 42%;
+}
+#logomio{
+    width: 20px;
+    height: 20px;
+}
+
+
+/*
+footer table{
+    width: 90%;
+    text-align: center;
+}
+
+
+
+*/
+
+/*--------------------------html contacto------------------------------------------------------------------*/
+
+#contacto{
+    text-align: center;
+    background-color: #efd1c8;
+    padding: 3%;
+}
+#contacto div{
+    margin: 10px;
+}
+/*--------------------------html FAQs------------------------------------------------------------------*/
+section#preguntas{
+    padding: 2%;
+    background-color: #efd1c8;
+}
+.boxPregunta{
+    padding: 2%;
+}
