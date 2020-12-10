@@ -3,45 +3,64 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
-
+body{
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+h3{
+    font-size: 20px;
+}
 /*--------------------------header------------------------------------------------------------------*/
 header{
     color: #d9937e;
     background: #f9efec;
-    padding: 1%;
+    padding: 1% 6%;
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 header h1{
-    width: 60%;
-    display: inline-block;
+    width: 10%;
+    flex-shrink: 0;
 }
 header nav{
-    width: 30%;
-    display: inline-block;
-
+    width: 35%;
+    flex-shrink: 0;
+   
 }
 ul{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 header nav li{
     display: inline-block;
     position: relative;
-    margin-right: 3%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 header a{
-    color: #d9937e;
+    color: #9B918E;
     text-decoration: none;
-    padding: 5%;    
-    
+    padding: 5%;
+    padding: 10px 15px;    
+}
+header a:hover{
+    color: #d9937e;
 }
 header #contactoHeader{
     background-color: #d9937e ;
     color: #f9efec;
+    border-radius: 20px;
     
 }
-
 ul ul{
     position: absolute;
     background-color: #f9efec;
@@ -73,24 +92,26 @@ footer a{
 footer #piePagina{
     background-color: #d9937e;
     color: white;
-    width: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3% 8%;
 }
-#footerContacto, #footerNavegacion, #footerRedes{
+
+footer #footerNavegacion ul{
+    width: 100%;
     display: inline-block;
-    width: 20%;
-    margin: 2% 6%;
 }
 footer #copyright{
     background-color: #d4846c;
     color: white;
-    padding: 1%;
+    padding: 1% 8%;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-#copyright p{
-    display: inline-block;
-    width: 42%;
-}
+
 #logomio{
     width: 20px;
     height: 20px;
