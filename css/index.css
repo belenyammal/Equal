@@ -6,11 +6,15 @@
 body{
     font-size: 16px;
 }
-h1{
+h1, h2{
     text-align: center;
     font-size: 40px;
+    color: #5c3428;
 }
 h3{
+    font-size: 20px;
+}
+.textoContenido{
     font-size: 20px;
 }
 /*--------------------------header------------------------------------------------------------------*/
@@ -80,6 +84,35 @@ ul li:hover ul{ display: block;}
     height: 100vh;
     background-image: url(../imagenes/imgPrincipal.jpg);
     background-size: cover;
+}
+/*--------------------------quienes somos------------------------------------------------------------------*/
+#qsomos{
+    height: 600px;
+    width: 100%;
+    background-color: #F9EFEC;
+    display: flex;
+    justify-content: center;
+}
+#qsomos-box{
+    width: 100%;
+    max-width: 1116px;
+    padding: 1% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+#qsomos-texto{
+    width: 50%;
+    padding-right:3%;
+}
+#qsomos-titulo{
+    margin-bottom: 30px;
+}
+#img-qsomos{
+    width: 600px;
+    width: 350px;
 }
 /*--------------------------footer------------------------------------------------------------------*/
 footer{
