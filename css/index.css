@@ -117,27 +117,43 @@ ul li:hover ul{ display: block;}
 /*--------------------------footer------------------------------------------------------------------*/
 footer{
     width: 100%;
-}
-footer a{
     color: white;
-    text-decoration: none;
+}
+.box{
+    width: 100%;
+    max-width: 1366px;
+}
+footer #box-piePagina{
+    height: 300px;
+    background-color: #d9937e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer #piePagina{
-    background-color: #d9937e;
-    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 3% 8%;
+
 }
 
 footer #footerNavegacion ul{
     width: 100%;
     display: inline-block;
 }
-footer #copyright{
-    background-color: #d4846c;
+footer a{
     color: white;
+    text-decoration: none;
+}
+#box-copyright{
+    background-color: #d4846c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer #copyright{
     padding: 1% 8%;
     text-align: center;
     display: flex;
@@ -150,16 +166,6 @@ footer #copyright{
     height: 20px;
 }
 
-
-/*
-footer table{
-    width: 90%;
-    text-align: center;
-}
-
-
-
-*/
 
 /*--------------------------html contacto------------------------------------------------------------------*/
 
