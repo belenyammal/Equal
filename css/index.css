@@ -3,6 +3,8 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
+/*--------------------------caracteristicas generales------------------------------------------------------------------*/
+
 body{
     font-size: 16px;
 }
@@ -17,6 +19,18 @@ h3{
 .textoContenido{
     font-size: 20px;
 }
+
+.box{
+    width: 100%;
+    max-width: 1166px;
+    padding: 2% 8%;
+}
+
+.logo{
+    
+    height: 25px ;
+}
+
 /*--------------------------header------------------------------------------------------------------*/
 header{
     color: #d9937e;
@@ -94,9 +108,6 @@ ul li:hover ul{ display: block;}
     justify-content: center;
 }
 #qsomos-box{
-    width: 100%;
-    max-width: 1116px;
-    padding: 1% 8%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -119,10 +130,7 @@ footer{
     width: 100%;
     color: white;
 }
-.box{
-    width: 100%;
-    max-width: 1366px;
-}
+
 footer #box-piePagina{
     height: 300px;
     background-color: #d9937e;
@@ -135,8 +143,6 @@ footer #piePagina{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3% 8%;
-
 }
 
 footer #footerNavegacion ul{
@@ -154,7 +160,6 @@ footer a{
     justify-content: center;
 }
 footer #copyright{
-    padding: 1% 8%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
