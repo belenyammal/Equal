@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EqualPackaging</title>
     <link rel="stylesheet" href="../css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
     <header>
@@ -24,47 +25,37 @@
             </ul>
         </nav>
     </header>
-    <section id="contacto">
-        <h1>¡Contactate!</h1>
-        <div>
-            <input type="name" name="nombre" placeholder="Nombre">   
-        </div>
-
-        <div>
-            <input type="e-mail" name="email" placeholder="Mail">  
-        </div>
-        <div>
-            <input type="text" name="asunto" placeholder="Asunto">  
-        </div>
-
-
-        <div>
-            <textarea name="mensaje" placeholder="Mensaje"></textarea>
-        </div>
-
-        <div>
-            <label for="aceptar">acepta las condiciones?</label>
-            <input type="checkbox" name="aceptar" value="1">    
-        </div>
-        
-        <div>
-            <label for="pais">Seleccione su pais</label>
-            <select name="pais">
-                <option value="Arg">Argentina</option>
-                <option value="Mx">Mexico</option>
-                <option value="Col">Colombia</option>
-            </select>
-        </div>
-
-        <div>
-            <input type="submit" name="enviar" value="Enviar">
-            <input type="reset" name="borrar" value="Limpiar">    
-        </div>    
-               
+    <section id="contacto" class="boxPadre">
+        <div id="box-contacto" class="box">
+            <h1 id="contacto-titulo">¡Contactate!</h1>
+            <div id="imgFormulario-box">
+                <img src="/imagenes/arcadia2.JPG" alt="fotoContacto" id="imgFormulario">
+            </div>
+            <div id="box-formulario">
+                <div>
+                    <input class="formulario-input" type="name" name="nombre" placeholder="Nombre">   
+                </div>
+    
+                <div>
+                    <input class="formulario-input" type="e-mail" name="email" placeholder="Mail">  
+                </div>
+                <div>
+                    <input class="formulario-input" type="text" name="asunto" placeholder="Asunto">  
+                </div>
+    
+                <div>
+                    <textarea  class="formulario-input-mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+    
+                <div>
+                    <input class="boton" type="submit" name="enviar" value="Enviar">   
+                </div>    
+            </div>
+        </div>      
     </section>
 
     <footer>
-        <div  id="box-piePagina">
+        <div  id="box-piePagina" class="boxPadre">
             <section id="piePagina" class="box">
                 <div id="footerContacto">
                     <a href="/html/index.html"><img class="logo" src="/imagenes/Equal _logo_negro.png" alt="logo"></a> 

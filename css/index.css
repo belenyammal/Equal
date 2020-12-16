@@ -25,6 +25,11 @@ h3{
     max-width: 1166px;
     padding: 2% 8%;
 }
+.boxPadre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .logo{
     
@@ -104,8 +109,6 @@ ul li:hover ul{ display: block;}
     height: 600px;
     width: 100%;
     background-color: #F9EFEC;
-    display: flex;
-    justify-content: center;
 }
 #qsomos-box{
     display: flex;
@@ -135,9 +138,6 @@ footer #box-piePagina{
     height: 300px;
     background-color: #d9937e;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 footer #piePagina{
     display: flex;
@@ -176,17 +176,71 @@ footer #copyright{
 
 #contacto{
     text-align: center;
-    background-color: #efd1c8;
+    background-color: #F9EFEC;
     padding: 3%;
+    
 }
-#contacto div{
-    margin: 10px;
+#box-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+}
+#contacto-titulo{
+    width: 100%;
+    margin-bottom: 3%
+}
+#imgFormulario-box{
+    width: 400px;
+    height: 530px;
+}
+#imgFormulario{
+    width: 100%;
+    height: 100%;
+    
+}
+#box-formulario{
+    margin-left: 8%;
+    width: 500px;
+}
+
+#box-formulario div{
+    width: 97%;
+}
+.formulario-input{
+    width: 100%;
+    height: 64px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    border: 2px solid #9b918e;
+    padding: 0px 5px;
+    
+}
+.formulario-input-mensaje{
+    width: 100%;
+    height: 131px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    border: 2px solid #9b918e;
+    padding: 0px 5px;
+}
+.boton{
+    width: 200px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background: #D9937E;
+    color: #F9EFEC;
+    font-size: 16px;
+    font-weight: bold;
 }
 /*--------------------------html FAQs------------------------------------------------------------------*/
 section#preguntas{
-    padding: 2%;
+    padding: 3%;
     background-color: #efd1c8;
+    text-align: center;
 }
+
 .boxPregunta{
     padding: 2%;
 }
