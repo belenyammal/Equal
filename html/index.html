@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EqualPackaging</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+    <link rel="stylesheet" href="/css/animate.css">
+
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 </head>
 
-<body>
+<body>  
     <header>
         <a href="/html/index.html"><img class="logo" src="/imagenes/Equall_logo_naranja.png" alt="logo"></a>
         <nav>
@@ -28,16 +33,39 @@
             </ul>
         </nav>
     </header>
-    <section id="principal">
+    <section id="principal" class="boxPadre">
         <div id="imgPrincipal"></div>
         <div id="box-contprincipal">
-            <h2>TU PACKAGING HABLA DE VOS</h2>
-            <button class="boton">Ver productos</button>
+            <h2 class="principal-titulo wow fadeIn" data-wow-duration="2s">TU PACKAGING HABLA DE VOS</h2>
+            <a href="productos.html"><button class="boton wow bounceInUp" data-wow-duration="2s">Ver productos</button></a>
         </div>
-        
     </section>
+
+    <section id="informacion" class="boxPadre">
+        <div id="box-informacion" class="box">
+            <div class="informacion-item wow fadeIn" data-wow-duration="3s">
+                <div class="box-icono" >
+                    <img class="icono" src="/imagenes/iconos/shopping-cart.png" alt="">
+                </div>
+                <h3>Ventas mayoristas</h3>
+            </div>
+            <div class="informacion-item wow fadeIn" data-wow-duration="3s">
+                <div class="box-icono">
+                    <img class="icono" src="/imagenes/iconos/delivery-truck.png" alt="">
+                </div>
+                <h3>Envios a todo el pais</h3>
+            </div>
+            <div class="informacion-item wow fadeIn" data-wow-duration="3s">
+                <div class="box-icono">
+                    <img class="icono" src="/imagenes/iconos/smartphone.png" alt="">
+                </div>
+                <h3>Atencion 24hs</h3>
+            </div>
+        </div>
+    </section>
+
     <section id="qsomos" class="boxPadre">
-        <div id="qsomos-box" class="box">
+        <div id="qsomos-box" class="box wow bounceInRight" data-wow-duration="3s">
             <div id="qsomos-texto">
                 <h2 id="qsomos-titulo">¡Bienvenidos!</h2>
                 <p class="textoContenido">Somos un equipo radicado en la Provincia de Córdoba. Brindamos productos personalizados adaptados a la necesidad de cada cliente con un servicio integral para la presentación de tus productos.</p>
@@ -47,6 +75,45 @@
             </div>
         </div>
     </section>
+
+    <section id="servicios" class="boxPadre">
+        <div id="box-servicios" class="box">
+            <h2 id="box-servicios-titulo">Nuestros Servicios</h2>
+            <div class="servicio-item" >
+                <img class="servicio-icono wow fadeInDown" data-wow-duration="2s" src="/imagenes/iconos/asesoramiento.png" alt="">
+                <h3 class="servicio-titulo wow fadeIn">Asesoramiento</h3>
+                <p class="servicio-texto  wow fadeInUp">Durante todo el proceso nuestro equipo te brinda consejos e informacion necesaria para lograr el mejor resultado final posible</p>
+            </div>
+            <div class="servicio-item" class=" wow" data-wow-duration="3s">
+                <img class="servicio-icono wow fadeInDown" src="/imagenes/iconos/factory.png" alt="">
+                <h3 class="servicio-titulo wow fadeIn">Fabricacion</h3>
+                <p class="servicio-texto wow fadeInUp">Nuestro equipo de alta tecnologia de hace que la calidad de nuestros productos sean insuperables</p>
+            </div>
+            <div class="servicio-item" class=" wow" data-wow-duration="3s">
+                <img class="servicio-icono wow fadeInDown" src="/imagenes/iconos/graphic-design.png" alt="">
+                <h3 class="servicio-titulo wow fadeIn">Diseño</h3>
+                <p class="servicio-texto wow fadeInUp">Contamos con diseñadores especializados para crear una imagen de tu producto que se destaque del resto</p>
+            </div>
+            <div class="servicio-item" class="wow" data-wow-duration="3s">
+                <img class="servicio-icono wow fadeInDown" src="/imagenes/iconos/logistica.png" alt="">
+                <h3 class="servicio-titulo wow fadeIn">Logistica</h3>
+                <p class="servicio-texto wow fadeInUp">Contamos con los medios necesarios para que el producto perfecto llegue a tus manos</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="intoCatalogo" class="boxPadre">
+        <div class="box box-intoCatalogo">
+            <div class="intoCatalogo-texto">
+                <h2>Catálogo</h2>
+                <p>Te mostramos algunos modelos de nuestros productos, pero no dudes en consultar el que tenias en mente.</p>
+            </div>
+            <img class="intoCatalogo-img intoCatalogo-img-uno" src="/imagenes/catalogo/laCaza1.JPG" alt="">
+            <img class="intoCatalogo-img intoCatalogo-img-dos" src="/imagenes/catalogo/golf2.JPG" alt="">
+            <a href="catalogo.html"><button id="intoCatalogo-boton" class="boton wow bounceInUp" data-wow-duration="2s">Ver mas</button></a>
+        </div>
+    </section>
+
     <footer>
         <div  id="box-piePagina" class="boxPadre">
             <section id="piePagina" class="box">
@@ -84,6 +151,9 @@
             </section>
         </div>
     </footer> 
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
-
 </html>
