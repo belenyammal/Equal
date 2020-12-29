@@ -691,7 +691,7 @@
     }
     #box-imgFormulario{
         width: 400px;
-        height: 430px;
+        height: 350px;
         grid-area: "box-imgFormulario"; 
 
     }
