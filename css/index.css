@@ -54,11 +54,6 @@
     .logo{
         height: 25px;
     }
-    .navbar-toggler-icon{
-        background-color: #d9937e /*el bg no iria pero no se me 
-        aplica para cambiar el color del icono*/
-
-    }
     .navbar-collapse{
         background-color:  #F9EFEC;
         width: 100%;
@@ -70,78 +65,10 @@
     .nav-item{
         padding: 3%;
     }
-    .navbar a{
+    .nav-links{
         color: #d9937e;
     }
-    /*
-   ul{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    header nav li{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    header a{
-        color: #9B918E;
-        text-decoration: none;
-        padding: 5%;
-        padding: 10px 15px;    
-    }
-    header a:hover{
-        color: #d9937e;
-    }
-    header #contactoHeader{
-        background-color: #d9937e ;
-        color: #f9efec;
-        border-radius: 20px;
-    }
-    #contactoHeader:hover{
-        background: #8A4E3C;
-    }
-    ul ul{
-        position: absolute;
-        background-color: #f9efec;
-        width: 100%;
-        top: 40px;
-        display: none;
-    }
-    ul ul li{
-        display: block;
-        padding: 3%;
-    }
-    ul li:hover ul{ display: block;}
-    
-    */
-    /*
-    header{
-        height: 88px;
-        color: #d9937e;
-        background: #F9EFEC;
-        position: sticky;
-        top: 0px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0% 8%;
-        z-index: 10;
-        
-    }
-    .logo{
-        height: 25px;
-    }
-    */
-    /*
-    nav{
-        display: none;
-    }
-    */
+   
     /*--------------------------img principal------------------------------------------------------------------*/
     #principal{
         position: relative;
@@ -379,6 +306,7 @@
         padding: 8% 2%;
     }
 
+
     /*--------------------------html contacto------------------------------------------------------------------*/
     
     #contacto{
@@ -491,6 +419,23 @@
     .navbar-collapse{
         margin-top: 0;
     }
+    .navbar-nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-links{
+        color: #9B918E;
+        text-decoration: none;
+    }
+    
+    .contactoLink{
+        background-color: #d9937e ;
+        color: #f9efec; 
+        border-radius: 20px;
+        padding: 10% 20%;
+        
+    }
     /*--------------------------quienes somos------------------------------------------------------------------*/
     #qsomos{
         height: 800px;
@@ -569,84 +514,21 @@
         color: #d9937e;
         padding: 1% 8%;
     }
-    .logo{
-        height: 35px;
-    }
-
-    .navbar-nav{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-     .nav-item{
+    
+    .nav-item{
         padding: 1%;
     }
-    .navbar a{
-        color: #9B918E;
-        text-decoration: none;
-    }
-    header a:hover{
+
+    .nav-links:hover{
         color:  #d9937e;
     }
     
-    .contactoLink{
-        background-color: #d9937e ;
-        color: #f9efec;  /*no se me aplica nose porque*/
-        border-radius: 20px;
-        padding: 10% 20%;
-        
-    }
     .contactoLink:hover{
         background: #8A4E3C;
-    }
-    /*
-    header nav{
-        display: block;
-    }
-    ul{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    header nav li{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    header a{
-        color: #9B918E;
-        text-decoration: none;
-        padding: 5%;
-        padding: 10px 15px;    
-    }
-    header a:hover{
-        color: #d9937e;
-    }
-    header #contactoHeader{
-        background-color: #d9937e ;
         color: #f9efec;
-        border-radius: 20px;
     }
-    #contactoHeader:hover{
-        background: #8A4E3C;
-    }
-    ul ul{
-        position: absolute;
-        background-color: #f9efec;
-        width: 100%;
-        top: 40px;
-        display: none;
-    }
-    ul ul li{
-        display: block;
-        padding: 3%;
-    }
-    ul li:hover ul{ display: block;}
-    
-    */
+   
+
     /*--------------------------img principal------------------------------------------------------------------*/
     
     #imgPrincipal{
