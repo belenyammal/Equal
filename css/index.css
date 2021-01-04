@@ -97,6 +97,22 @@
         text-decoration: none;
   
     }
+    .box-whatsapp{
+        width: 65px;
+        height: 65px;
+        position: fixed;
+        background-color: #8A4E3C;
+        bottom: 5%;
+        right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 30;
+    }
+    .icono-whatsapp{
+        width: 45px;
+    }
     /*--------------------------informacion------------------------------------------------------------------*/
     #informacion{
         background-color: #EFD1C8;
@@ -257,6 +273,9 @@
     footer a{
         color:#F9EFEC;
         text-decoration: none;
+    }
+    .footerRedes-icono{
+        margin: 5% 2%;
     }
     #box-copyright{
         background-color: #d4846c;
@@ -522,7 +541,10 @@
     }
     ul li:hover ul{ display: block;}
     
-
+    .box-whatsapp{
+        right: 5%;
+    }
+ 
     /*--------------------------img principal------------------------------------------------------------------*/
     
     #imgPrincipal{
@@ -645,6 +667,10 @@
     footer #piePagina{
         grid-template:  auto / auto auto auto ;
         justify-content: space-between;
+    }
+
+    .footerRedes-icono{
+        width: 35px;
     }
 
     footer #copyright{
