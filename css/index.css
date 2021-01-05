@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    box-sizing: content-box;
 }
 
 /*?--------------------------celular------------------------------------------------------------------*/
@@ -13,6 +14,10 @@
         color: #8A4E3C;
         margin: 0;
         padding: 0;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: bold;
     }
     .boton{
         width: 200px;
@@ -42,30 +47,41 @@
         font-size: 16px;
     }
     header{
-        height: 88px;
-        color: #d9937e;
-        background: #F9EFEC;
         position: sticky;
         top: 0px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0% 8%;
         z-index: 10;
-        
+    }
+    .navbar{
+        background-color:  #F9EFEC;
+        height: 88px;
+        color: #d9937e;
     }
     .logo{
         height: 25px;
     }
-    nav{
-        display: none;
+    .navbar-collapse{
+        background-color:  #F9EFEC;
+        width: 100vw;
+        margin-top: 10%;
+        margin-left: -4%;
     }
+    .navbar-nav{ 
+        width: 100vw; 
+        margin-left: 0%;
+    }
+
+    .nav-item{
+        padding: 3%;
+    }
+    .nav-links{
+        color: #d9937e;
+    }
+   
     /*--------------------------img principal------------------------------------------------------------------*/
     #principal{
         position: relative;
         width: 100%;
-        height:800px;
+        height:100vh;
         overflow: hidden;
     }
     #imgPrincipal{
@@ -201,6 +217,7 @@
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 10% 0px;
+        box-sizing: content-box;
     }
     .servicio-titulo{
         width: 100%;
@@ -247,6 +264,7 @@
         height: 550px;
         background-color: #d9937e;
         width: 100%;
+        padding: 5% 0%;
     }
     footer #piePagina{
         display: grid;
@@ -304,15 +322,19 @@
     /*--------------------------html FAQs------------------------------------------------------------------*/
     #box-faq{
         color: #8A4E3C;
-        text-align: left;
+        
     }
-    section#preguntas{
+    #preguntas{
         background-color: #efd1c8;
-        padding: 4% 2%;
+        padding: 10% 5%;
+        
+    }
+    .accordion{
+        margin: 3% 0%;
     }
 
-    .boxPregunta{
-        padding: 8% 2%;
+    .accordion-button{
+        text-align: left;
     }
 
     /*--------------------------html contacto------------------------------------------------------------------*/
@@ -423,6 +445,32 @@
 
 /*?--------------------------Tablet------------------------------------------------------------------*/
 @media only screen and (min-width:768px){
+
+    .collapse{
+        margin: 0%;
+        width: auto;
+        padding: 0% 5%;
+    }
+    .navbar-nav{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-links{
+        color: #9B918E;
+        text-decoration: none;
+    }
+    
+    .contactoLink{
+        background-color: #d9937e ;
+        color: #f9efec; 
+        border-radius: 20px;
+        padding: 10% 20%;
+        
+    }
+ 
     /*--------------------------quienes somos------------------------------------------------------------------*/
     #qsomos{
         height: 800px;
@@ -439,14 +487,20 @@
     }
 
     /*--------------------------html FAQs------------------------------------------------------------------*/
-
-    section#preguntas{
-        padding:2%;
+    #preguntas{
+        padding: 5%;
     }
-
-    .boxPregunta{
-        padding: 4% 2%;
+    .accordion{
+        width: 100vw;
+        margin: 3% 0%;
     }
+    
+    .accordion-item{
+        width: 100%;
+        
+    }
+    
+    
     /*--------------------------html contactos------------------------------------------------------------------*/
 
     #box-formulario{
@@ -495,51 +549,22 @@
     }
     
     /*--------------------------header------------------------------------------------------------------*/
-    header nav{
-        display: block;
+    .collapse{
+        padding: 0%;
     }
-    ul{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    header nav li{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    header a{
-        color: #9B918E;
-        text-decoration: none;
-        padding: 5%;
-        padding: 10px 15px;    
-    }
-    header a:hover{
+    .navbar{
+        height: 60px;
         color: #d9937e;
+        padding: 1% 8%;
     }
-    header #contactoHeader{
-        background-color: #d9937e ;
-        color: #f9efec;
-        border-radius: 20px;
+    
+    .nav-item{
+        padding: 1%;
     }
-    #contactoHeader:hover{
-        background: #8A4E3C;
+
+    .nav-links:hover{
+        color:  #d9937e;
     }
-    ul ul{
-        position: absolute;
-        background-color: #f9efec;
-        width: 100%;
-        top: 40px;
-        display: none;
-    }
-    ul ul li{
-        display: block;
-        padding: 3%;
-    }
-    ul li:hover ul{ display: block;}
     
     .box-whatsapp{
         right: 5%;
@@ -663,6 +688,7 @@
     
     footer #box-piePagina{
         height: 300px;
+        padding: 0%;
     }
     footer #piePagina{
         grid-template:  auto / auto auto auto ;
@@ -673,24 +699,28 @@
         width: 35px;
     }
 
-    footer #copyright{
+    #copyright{
         padding: 0%;
-        padding: 0% 5%;
     }
 
     #logomio{
         width: 30px;
     }
 
+
      /*--------------------------html FAQs------------------------------------------------------------------*/
  
-    section#preguntas{
-        padding: 2%;
+    #preguntas{
+        padding: 5%;
     }
-
-    .boxPregunta{
-        padding: 2%;
-        font-size: 25px;
+    .accordion{
+        width: 90vw;
+        margin: 3% 0%;
+    }
+    
+    .accordion-item{
+        width: 100%;
+        
     }
        /*--------------------------html contacto------------------------------------------------------------------*/
     

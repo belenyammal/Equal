@@ -7,9 +7,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 
-    <!--bootstrap
+    <!--bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    -->
+    
     <!--Links animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
     <link rel="stylesheet" href="../css/animate.css">
@@ -22,30 +22,40 @@
 
 <body>  
     <header>
-        <a href="html/index.html"><img class="logo" src="../imagenes/Equall_logo_naranja.png" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="productos.html">PRODUCTOS</a>
-                    <ul>
-                        <li><a href="productos.html">Cajas</a></li>
-                        <li><a href="productos.html">Ecobolsas</a></li>
-                    </ul>
+        <nav class="navbar navbar-expand-md navbar-dark ">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="../imagenes/Equall_logo_naranja.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <img class="navbar-toggler-icon" src="../imagenes/iconos/burger.png"></img>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-links" href="index.html">HOME</a>
                 </li>
-                <li><a href="catalogo.html">CATALOGO</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contacto.html" id="contactoHeader">CONTACTO</a></li>
-            </ul>
-        </nav>
+                <li class="nav-item">
+                    <a class="nav-links" href="productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-links" href="catalogo.html">CATALOGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-links" href="faqs.html">FAQs</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="contactoLink nav-links" href="contacto.html">CONTACTO</a>
+                </li>      
+              </ul>
+            </div>  
+          </nav>
+          <div class="box-whatsapp">
+            <a href=""><img class="icono-whatsapp" src="../imagenes/iconos/whatsapp (1).png" alt=""></a>
+        </div>
     </header>
     <section id="principal" class="boxPadre">
         <div id="imgPrincipal"></div>
         <div id="box-contprincipal">
             <h2 class="principal-titulo wow fadeIn" data-wow-duration="2s">TU PACKAGING HABLA DE VOS</h2>
             <a href="productos.html"><button class="boton wow bounceInUp" data-wow-duration="2s">Ver productos</button></a>
-        </div>
-        <div class="box-whatsapp">
-            <a href=""><img class="icono-whatsapp" src="../imagenes/iconos/whatsapp (1).png" alt=""></a>
         </div>
     </section>
 
