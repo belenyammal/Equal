@@ -1,0 +1,98 @@
+/*--------------------------html productos------------------------------------------------------------------*/
+
+
+@media only screen and (min-width:320px){
+
+    .productos{
+        background-color:$naranja-claro;
+
+        .productos__box{
+            padding: 50px 0px;
+
+            .producto{
+                display: grid;
+                grid-template: auto auto / auto;
+                gap: 30px;
+                justify-content: center;
+                justify-items: center;
+                margin-top: 50px;
+                padding: 30px 25px;
+                background:$crema;
+
+                .producto__texto{
+                    width: 290px;
+
+                    .producto__titulo{
+                        color: $marron-oscuro;
+                    }
+                }
+
+                .producto__img{
+                    width: 290px;
+                    height: 200px;
+                }
+            }
+        }
+
+
+    }
+    
+}
+@media only screen and (min-width:768px){
+
+    .productos{
+
+        .productos__box{
+
+            .producto{
+                padding: 40px 70px;
+        
+                .producto__texto{
+                    width: 320px;
+                }
+        
+                .producto__img{
+                    width: 320px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1024px){
+
+    .productos{
+
+        .productos__box{
+            padding: 5% 0px;
+            
+            .producto{
+                display: grid;
+                grid-template: auto / auto auto;
+                gap: 60px;
+                align-items: center;
+                margin-top: 50px;
+                padding: 60px 80px;
+
+                .producto__texto{
+                    width: 300px;
+                    height: 200px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                    .producto__titulo{
+                        font-size: 50px;
+                        font-weight: lighter;
+                    }
+
+                }
+                .producto__img{
+                    width: 400px;
+                    height: 300px;
+                }
+        }   }
+    }
+    
+
+}

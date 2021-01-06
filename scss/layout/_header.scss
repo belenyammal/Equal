@@ -1,0 +1,89 @@
+/*--------------------------header------------------------------------------------------------------*/
+
+
+@media only screen and (min-width:320px){
+    header{
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+    .navbar {
+        background-color: $crema;
+        height: 88px;
+        color: $naranja-intermedio;
+
+        .navbar__logo{
+            height: 25px;
+        }
+    }
+    .navbar-collapse{
+        background-color: $crema;
+        width: 100vw;
+        margin-top: 10%;
+        margin-left: -4%;
+    }
+    .navbar-nav{ 
+        width: 100vw; 
+        margin-left: 0%;
+    }
+
+    .nav-item{
+        padding: 3%;
+    }
+    .nav-links{
+        color: $naranja-intermedio;
+    }
+}
+@media only screen and (min-width:768px){
+    .collapse{
+        margin: 0%;
+        width: auto;
+        padding: 0% 5%;
+    }
+    .navbar-nav{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-links{
+        color: $gris-claro;
+        text-decoration: none;
+    }
+    
+    .contactoLink{
+        background-color: $naranja-intermedio ;
+        color:$crema; 
+        border-radius: 20px;
+        padding: 10% 20%;
+        
+    }
+}
+@media only screen and (min-width:1024px){
+    .collapse{
+        padding: 0%;
+    }
+    .navbar{
+        height: 60px;
+        color: $naranja-intermedio;
+        padding: 1% 8%;
+    }
+    
+    .nav-item{
+        padding: 1%;
+    }
+
+    .nav-links:hover{
+        color:  $naranja-intermedio;
+    }
+    .contactoLink:hover{
+        background-color: $marron-oscuro;
+        color: $crema;
+        text-decoration: none;
+    }
+    .box-whatsapp{
+        right: 5%;
+    }
+ 
+}

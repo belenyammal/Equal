@@ -1,0 +1,108 @@
+/*--------------------------footer------------------------------------------------------------------*/
+
+@media only screen and (min-width:320px){
+    
+    .piePagina {
+        height: 550px;
+        background-color: $naranja-intermedio;
+        width: 100%;
+        padding: 5% 0%;
+        color:#F9EFEC;
+
+        .piePagina__box { 
+            display: grid;
+            grid-template:  auto auto auto / auto ;
+            grid-template-areas: "footerContacto"
+                                    "footerNavegacion"
+                                    "footerRedes";
+            gap: 46px;
+        }
+    }
+    
+
+    .footerContacto{
+        grid-area: "footerContacto";
+
+        .footerContacto__logo{
+            height: 25px;
+        }
+    }
+
+    
+    .footerNavegacion{
+        grid-area: "footerNavegacion";
+
+        .footerNavegacion ul{
+            width: 100%;
+            display: inline-block;
+
+        }
+        
+    }
+
+    footer a{
+        color:#F9EFEC;
+        text-decoration: none;
+    }
+    .footerRedes {
+        grid-area: "footerRedes";
+
+        .footerRedes__icono {
+            margin: 5% 2%;
+        }
+    }
+  
+    
+    .copyright{
+        background-color:$naranja-oscuro;
+        color: $crema;
+
+        .copyright__box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 128px;
+            align-items: center;
+        }
+    }
+    
+    .diseñoPor{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        .diseñoPor__logomio{
+            width: 30px;
+            padding-left: 3%;
+        }
+    }
+
+    
+}
+/*@media only screen and (min-width:768px){}*/
+
+@media only screen and (min-width:1024px){
+
+    .piePagina{
+        height: 300px;
+        padding: 0%;
+
+        .piePagina__box{
+            grid-template:  auto / auto auto auto ;
+            justify-content: space-between;
+        }
+    }
+    
+
+    .footerRedes__icono{
+        width: 35px;
+    }
+
+    .copyright__box{
+        padding: 0%;
+    }
+
+    .diseñoPor__logomio{
+        width: 30px;
+    }
+}
