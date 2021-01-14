@@ -1,29 +1,24 @@
 /*--------------------------Home------------------------------------------------------------------*/
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width: $phone){
     /*--------------------------img principal------------------------------------------------------------------*/
     .principal{
         position: relative;
-        width: 100%;
-        height:100vh;
+        @include sizes ( 100%, 100vh);
         overflow: hidden;
 
         .principal__img{
-            width: 100%;
-            height:100%;
+            @include sizes ( 100%, 100%);
             background-image: url(../../imagenes/principal__img.jpg);
             background-size: cover;
             z-index: -10;
         }
         .principal__contenido{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             position: absolute; 
             width: 300px;
-            text-align: center;
             top: 30%; 
             padding: 3%;
+            @include centrarHijos;
 
             .principal__contenido__titulo{
                 padding-bottom: 8%;
@@ -38,20 +33,14 @@
         background-color:$naranja-claro;
 
         .informacion__contenido {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            @include centrarHijos;
         }
 
         .informacion__contenido__item{
             margin: 40px 0px;
             text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             width: 200px;
+            @include centrarHijos;
 
             .boxIcono{
                 background-color: #FFF0F0;
@@ -59,14 +48,11 @@
                 height: 80px;
                 margin-bottom: 10px;
                 border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
-                
+                @include centrarHijos;
+
                 .boxIcono__icono{
-                    width: 40px;
-                    height: 40px;
+                    @include sizes ( 40px, 40px);
                 }
             
             }
@@ -76,8 +62,7 @@
 
     /*--------------------------quienes somos------------------------------------------------------------------*/
     .qsomos {
-        height: 600px;
-        width: 100%;
+        @include sizes ( 100%, 600px);
         background-color:$crema;
         
         .qsomos__box {
@@ -100,8 +85,7 @@
                 
             }
             .qsomos__img{
-                width: 320px;
-                height: 239px;
+                @include sizes ( 320px, 239px);
                 grid-area: "img-qsomos";
             }
         }
@@ -118,31 +102,26 @@
             gap: 30px;
             justify-content: center;
         
-            .servicios__item{
-                width: 300px;
-                height: 250px;
+            .servicios__item {
+                @include sizes ( 300px, 250px);
                 background-color:$crema;
                 border-radius: 10px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
                 text-align: center;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 padding: 10% 0px;
                 box-sizing: content-box;
+                @include centrarHijos;
 
-                .servicios__item__titulo{
+                .servicios__item__titulo {
                     width: 100%;
                     font-size: 27px;
                     font-weight: normal;
                     margin: -50px 0px;
                 }
-                .servicios__item__icono{
-                    height: 48px;
-                    width: 48px;
+                .servicios__item__icono {
+                    @include sizes ( 48px, 48px ) ;
                 }
-                .servicios__item__texto{
+                .servicios__item__texto {
                     width: 220px;
                 }
             }
@@ -150,10 +129,10 @@
     }
     
     /*--------------------------introCatalogo------------------------------------------------------------------*/
-    .intoCatalogo{
+    .intoCatalogo {
         background:$crema;
 
-        .intoCatalogo__box{
+        .intoCatalogo__box {
             display: grid;
             grid-template: repeat(4, auto) / auto;
             gap: 30px;
@@ -161,90 +140,86 @@
             justify-items: center;
             padding: 12% 5%;
 
-            .intoCatalogo__texto{
+            .intoCatalogo__texto {
                 width: 310px;
             }
-            .intoCatalogo__img{
-                width: 300px;
-                height: 200px;
+            .intoCatalogo__img {
+                @include sizes ( 300px, 200px);
             }
         }
     }
 
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width: $tablet){
     /*--------------------------quienes somos------------------------------------------------------------------*/
-    .qsomos{
-        height: 800px;
-        width: 100%;   
+    .qsomos {
+        @include sizes ( 100%, 800px); 
 
-        .qsomos__contenido{
+        .qsomos__contenido {
             width: 440px;
 
             
         }
-        .qsomos__img{
-            width: 440px;
-            height: 339px;
+        .qsomos__img {
+            @include sizes ( 440px, 339px);
         }
     }
 
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width: $desktop){
     /*--------------------------img principal------------------------------------------------------------------*/
-    .principal{
+    .principal {
 
-        .principal__img{
+        .principal__img {
             height: 100vh;
         }
-        .principal__contenido{
+        .principal__contenido {
             width: 100%;
         }
-        .principal__contenido__titulo{
+        .principal__contenido__titulo {
             padding-bottom: 3%;
         }
     }
 
     /*--------------------------informacion__box------------------------------------------------------------------*/
-    .informacion__box{
+    .informacion__box {
 
-        .informacion__contenido{
+        .informacion__contenido{ 
             justify-content: space-around;
     
-            .informacion__contenido__item{
+            .informacion__contenido__item {
                 margin: 0px;
             }
         }
     }
-    
+     
     
     /*--------------------------quienes somos------------------------------------------------------------------*/
-    .qsomos{
+    .qsomos {
         position: relative;
         height: 800px; 
 
-        .qsomos__box{
+        .qsomos__box {
             grid-template:  auto / auto auto;
             justify-content: space-between;
             background-color: $naranja-intermedio;
             color:$crema; 
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         
-            .qsomos__contenido{
+            .qsomos__contenido {
                 margin-right: 2%;
                 width: 450px;
 
-                .qsomos__contenido__titulo{
+                .qsomos__contenido__titulo {
                     font-size: 52px;
                     color:$crema;
                
                 }
             } 
-            .qsomos__img{
-                width: 450px;
-                height: 350px;
+            .qsomos__img {
+                @include sizes ( 450px, 350px);
             }
         }
     }
@@ -252,35 +227,33 @@
    
 
     /*--------------------------Servicios------------------------------------------------------------------*/
-    .servicios{
+    .servicios {
         padding: 1%; 
 
-        .servicios__box{
+        .servicios__box {
             grid-template: auto auto / auto auto;
             gap: 35px 70px;
 
-            .servicios__titulo{
+            .servicios__titulo {
                 grid-column: span 2;
             }
 
-            .servicios__item{
-                width: 320px;
-                height: 210px;
+            .servicios__item {
+                @include sizes ( 320px, 210px);
                 padding: 15% 5%;
 
-                .servicios__item__titulo{
+                .servicios__item__titulo {
                     font-size: 27px;
                 }
-                .servicios__item__icono{
-                    height: 48px;
-                    width: 48px;
+                .servicios__item__icono {
+                    @include sizes ( 48px, 48px);
                 }
-                .servicios__item__texto{
+                .servicios__item__texto {
                     width: 240px;
                 }
             }
-            .servicios__item:hover{
-                transform: scale(1.05, 1.05);
+            .servicios__item:hover {
+                transform: scale(1.03, 1.03);
             }
         }
     }
@@ -301,9 +274,8 @@
             padding: 8% 5%;
 
             .intoCatalogo__texto{
-                width: 200px;
+                @include sizes ( 200px, 200px);
                 grid-area: "intoCatalogo__texto";
-                height: 200px;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: flex-end;
@@ -311,20 +283,20 @@
             }
 
             .intoCatalogo__img{
-                width: 300px;
-                height: 600px;
+                @include sizes ( 300px, 600px);
+                grid-row: span 2;
+            }
 
-                .intoCatalogo__img--uno{
-                    grid-area: "intoCatalogo__img--uno";
-                    grid-row: span 2;
-                }
-                .intoCatalogo__img--dos{
-                    grid-area: "intoCatalogo__img--dos";
-                    grid-row: span 2;
-                }
+            .intoCatalogo__img--uno{
+                //@extend .intoCatalogo__img;
+                grid-area: "intoCatalogo__img--uno";
+            }
+            .intoCatalogo__img--dos{
+                grid-area: "intoCatalogo__img--dos";
             }
 
             .intoCatalogo__boton{
+                //@extend .intoCatalogo__img;
                 grid-area: "intoCatalogo__boton";
                 align-self: start; /*no estaria funcionand0*/
             }

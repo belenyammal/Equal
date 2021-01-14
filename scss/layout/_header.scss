@@ -1,7 +1,7 @@
 /*--------------------------header------------------------------------------------------------------*/
 
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width: $phone){
     header{
         position: sticky;
         top: 0px;
@@ -34,7 +34,7 @@
         color: $naranja-intermedio;
     }
 }
-@media only screen and (min-width:768px){
+@media only screen and (min-width: $tablet){
     .collapse{
         margin: 0%;
         width: auto;
@@ -60,7 +60,7 @@
         
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width: $desktop){
     .collapse{
         padding: 0%;
     }
@@ -78,7 +78,7 @@
         color:  $naranja-intermedio;
     }
     .contactoLink:hover{
-        background-color: $marron-oscuro;
+        background: darken( $naranja-intermedio,  10%); 
         color: $crema;
         text-decoration: none;
     }

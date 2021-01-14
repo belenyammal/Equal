@@ -1,13 +1,13 @@
 /*--------------------------footer------------------------------------------------------------------*/
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width: $phone){
     
     .piePagina {
-        height: 550px;
+        @include sizes ( 100%, 550px);
         background-color: $naranja-intermedio;
-        width: 100%;
         padding: 5% 0%;
         color:#F9EFEC;
+        text-align: center;
 
         .piePagina__box { 
             display: grid;
@@ -35,7 +35,7 @@
         .footerNavegacion ul{
             width: 100%;
             display: inline-block;
-
+            margin: 0%;
         }
         
     }
@@ -53,43 +53,56 @@
     }
   
     
-    .copyright{
+    .copyright {
         background-color:$naranja-oscuro;
         color: $crema;
 
-        .copyright__box{
+        .copyright__box {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             height: 128px;
             align-items: center;
+            text-align: center;
+
+            .diseñoPor{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+                margin: 0% auto;
+        
+                .diseñoPor__logomio{
+                    width: 30px;
+                    padding-left: 8%;
+                }
+            }
         }
     }
-    
-    .diseñoPor{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-
-        .diseñoPor__logomio{
-            width: 30px;
-            padding-left: 3%;
-        }
-    }
-
     
 }
 /*@media only screen and (min-width:768px){}*/
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width: $desktop){
 
     .piePagina{
         height: 300px;
         padding: 0%;
+        text-align: start;
 
         .piePagina__box{
             grid-template:  auto / auto auto auto ;
             justify-content: space-between;
+
+            .footerNavegacion{
+                ul{
+                    li{
+                        a:hover{
+                            color: lighten($naranja-claro, 10%);
+                        }
+                    }
+                }
+
+            }
         }
     }
     
@@ -97,12 +110,20 @@
     .footerRedes__icono{
         width: 35px;
     }
+    .copyright {
 
-    .copyright__box{
-        padding: 0%;
-    }
+        .copyright__box {
+            padding: 0% 8%;
+            text-align: start;
 
-    .diseñoPor__logomio{
-        width: 30px;
+            .diseñoPor {
+                margin: 0%;
+        
+                .diseñoPor__logomio {
+                    width: 30px;
+                }
+            }
+        }
     }
+    
 }
