@@ -149,6 +149,18 @@
         }
     }
 
+    /*--------------------------cotizacion------------------------------------------------------------------*/
+    .cotizacion{
+        @include sizes (100%, 565px);
+        background-image: url(../../imagenes/cotizacion.png);
+        background-size: contain;
+
+        .cotizacion__box{
+            @include sizes (100%, 40%);
+            @include centrarHijos;
+        }
+    }
+
 }
 
 @media only screen and (min-width: $tablet){
@@ -163,6 +175,19 @@
         }
         .qsomos__img {
             @include sizes ( 440px, 339px);
+        }
+    }
+
+    /*--------------------------cotizacion------------------------------------------------------------------*/
+    .cotizacion{
+        @include sizes (100%, 600px);
+
+        .cotizacion__box{
+            @include sizes (100%, 40%);
+
+            .cotizacion__titulo{
+                width: 100%;
+            }
         }
     }
 
@@ -302,6 +327,11 @@
             }
         }
 
+    }
+
+    /*--------------------------cotizacion------------------------------------------------------------------*/
+    .cotizacion{
+        @include sizes (100%, 600px);
     }
     
 }
