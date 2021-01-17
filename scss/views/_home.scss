@@ -294,21 +294,17 @@
             grid-template-areas: "intoCatalogo__img--uno intoCatalogo__img--dos intoCatalogo__texto"
                                     "intoCatalogo__img--uno intoCatalogo__img--dos intoCatalogo__boton";
             text-align: center;
-            justify-items: center;
-            align-items: center;
             padding: 8% 5%;
 
             .intoCatalogo__texto{
                 @include sizes ( 200px, 200px);
                 grid-area: "intoCatalogo__texto";
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-end;
+                align-self: end;
                 
             }
 
             .intoCatalogo__img{
-                @include sizes ( 300px, 600px);
+                @include sizes ( 320px, 600px);
                 grid-row: span 2;
             }
 
@@ -323,7 +319,7 @@
             .intoCatalogo__boton{
                 //@extend .intoCatalogo__img;
                 grid-area: "intoCatalogo__boton";
-                align-self: start; /*no estaria funcionand0*/
+                align-self: start; 
             }
         }
 

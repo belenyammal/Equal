@@ -84,16 +84,19 @@
 
 @media only screen and (min-width: $desktop){
 
-    .piePagina{
+    .piePagina {
         height: 350px;
         padding: 0%;
         text-align: start;
 
-        .piePagina__box{
+        .piePagina__box {
             grid-template:  auto / auto auto auto ;
             justify-content: space-between;
 
-            .footerNavegacion{
+            .footerNavegacion {
+                border-left: 1px solid $crema;
+                padding-left: 50px;
+
                 ul{
                     li{
                         a:hover{
@@ -103,11 +106,16 @@
                 }
 
             }
+
+            .footerRedes {
+                border-left: 1px solid $crema;
+                padding-left: 50px;
+            }
         }
     }
     
 
-    .footerRedes__icono{
+    .footerRedes__icono {
         width: 35px;
     }
     .copyright {

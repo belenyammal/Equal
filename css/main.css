@@ -53,7 +53,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border-radius: 50%;
-    z-index: 30; }
+    z-index: 30;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
   .icono-whatsapp {
     width: 45px; }
   li {
@@ -193,8 +194,14 @@ body {
     .piePagina .piePagina__box {
       grid-template: auto / auto auto auto;
       justify-content: space-between; }
-      .piePagina .piePagina__box .footerNavegacion ul li a:hover {
-        color: #faf2f0; }
+      .piePagina .piePagina__box .footerNavegacion {
+        border-left: 1px solid #f9efec;
+        padding-left: 50px; }
+        .piePagina .piePagina__box .footerNavegacion ul li a:hover {
+          color: #faf2f0; }
+      .piePagina .piePagina__box .footerRedes {
+        border-left: 1px solid #f9efec;
+        padding-left: 50px; }
   .footerRedes__icono {
     width: 35px; }
   .copyright .copyright__box {
@@ -424,18 +431,14 @@ body {
     gap: 0px;
     grid-template-areas: "intoCatalogo__img--uno intoCatalogo__img--dos intoCatalogo__texto" "intoCatalogo__img--uno intoCatalogo__img--dos intoCatalogo__boton";
     text-align: center;
-    justify-items: center;
-    align-items: center;
     padding: 8% 5%; }
     .intoCatalogo .intoCatalogo__box .intoCatalogo__texto {
       width: 200px;
       height: 200px;
       grid-area: "intoCatalogo__texto";
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-end; }
+      align-self: end; }
     .intoCatalogo .intoCatalogo__box .intoCatalogo__img {
-      width: 300px;
+      width: 320px;
       height: 600px;
       grid-row: span 2; }
     .intoCatalogo .intoCatalogo__box .intoCatalogo__img--uno {
@@ -444,8 +447,7 @@ body {
       grid-area: "intoCatalogo__img--dos"; }
     .intoCatalogo .intoCatalogo__box .intoCatalogo__boton {
       grid-area: "intoCatalogo__boton";
-      align-self: start;
-      /*no estaria funcionand0*/ }
+      align-self: start; }
   /*--------------------------cotizacion------------------------------------------------------------------*/
   .cotizacion {
     width: 100%;
