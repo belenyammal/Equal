@@ -53,8 +53,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border-radius: 50%;
-    z-index: 30;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
+    z-index: 30; }
   .icono-whatsapp {
     width: 45px; }
   li {
@@ -80,7 +79,7 @@ body {
     z-index: 10; }
   .navbar {
     background-color: #f9efec;
-    height: 88px;
+    height: 80px;
     color: #d9937e; }
     .navbar .navbar__logo {
       height: 25px; }
@@ -93,9 +92,11 @@ body {
     width: 100vw;
     margin-left: 0%; }
   .nav-item {
-    padding: 3%; }
+    padding: 4% 3%;
+    text-align: center; }
   .nav-links {
-    color: #d9937e; } }
+    color: #d9937e;
+    text-align: center; } }
 
 @media only screen and (min-width: 768px) {
   .collapse {

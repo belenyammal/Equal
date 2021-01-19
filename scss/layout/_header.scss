@@ -9,7 +9,7 @@
     }
     .navbar {
         background-color: $crema;
-        height: 88px;
+        height: 80px;
         color: $naranja-intermedio;
 
         .navbar__logo{
@@ -28,10 +28,12 @@
     }
 
     .nav-item{
-        padding: 3%;
+        padding: 4% 3%;
+        text-align: center;
     }
     .nav-links{
         color: $naranja-intermedio;
+        text-align: center;
     }
 }
 @media only screen and (min-width: $tablet){

@@ -10,6 +10,9 @@
      <!--bootstrap-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
+    <!--Links animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+    <link rel="stylesheet" href="../css/animate.css">
 
     <link rel="stylesheet" href="../css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -51,31 +54,31 @@
     <div>
         <section class="productos boxPadre">
             <div class="productos__box" class="box">
-               <h1>Nuestros productos</h1>
+               <h1 class="wow fadeInDown">Nuestros productos</h1>
                 <div class="producto">
                     <div class="producto__texto">
-                        <h3 class="producto__titulo">Cajas Estandar</h3>
-                        <p>Producción de cajas de ravioles, ñoquis, pizza, lomos, bandejas de cartón, 
+                        <h3 class="producto__titulo wow fadeInDown">Cajas Estandar</h3>
+                        <p class="wow fadeIn" data-wow-duration="3s">Producción de cajas de ravioles, ñoquis, pizza, lomos, bandejas de cartón, 
                             cajas para tortas y masas entre muchas más.</p>
                     </div>
-                    <img class="producto__img" src="../imagenes/productos/estandar.jpg" alt="productosImg">
+                    <img class="producto__img wow fadeInUp" data-wow-duration="3s" src="../imagenes/productos/estandar.jpg" alt="productosImg">
 
                 </div>
                 <div class="producto" id="productoItem-personalizada">
                     <div class="producto__texto">
-                        <h3 class="producto__titulo">Cajas Personalizadas</h3>
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                        <h3 class="producto__titulo wow fadeInDown">Cajas Personalizadas</h3>
+                        <p class="wow fadeIn" data-wow-duration="3s" >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
                             consectetur, voluptatem. Excepteur sint occaecat cupidatat non proident.</p>
                     </div>
-                    <img class="producto__img" src="../imagenes/productos/personalizada.jpg" alt="productosImg">
+                    <img class="producto__img wow fadeInUp" data-wow-duration="3s" src="../imagenes/productos/personalizada.jpg" alt="productosImg">
                 </div>
                 <div class="producto">
                     <div class="producto__texto">
-                        <h3 class="producto__titulo">Ecobolsas</h3>
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+                        <h3 class="producto__titulo wow fadeInDown">Ecobolsas</h3>
+                        <p class="wow fadeIn" data-wow-duration="3s">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
                             consectetur, voluptatem. Excepteur sint occaecat cupidatat non proident.</p>
                     </div>
-                    <img class="producto__img" src="../imagenes/productos/ecobolsa.jpg" alt="productosImg">
+                    <img class="producto__img wow fadeInUp" data-wow-duration="3s" src="../imagenes/productos/ecobolsa.jpg" alt="productosImg">
                 </div>
             </div>
         </section>
@@ -127,6 +130,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--WOW-->
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
