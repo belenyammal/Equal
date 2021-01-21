@@ -9,7 +9,7 @@
 
         .principal__img{
             @include sizes ( 100%, 100%);
-            background-image: url(imagenes/principal__img.jpg);
+            background-image: url(../imagenes/principal__img.jpg);
             background-size: cover;
             z-index: -10;
         }
@@ -152,7 +152,7 @@
     /*--------------------------cotizacion------------------------------------------------------------------*/
     .cotizacion{
         @include sizes (100%, 565px);
-        background-image: url(imagenes/cotizacion.png);
+        background-image: url(../imagenes/cotizacion.png);
         background-size: contain;
 
         .cotizacion__box{
