@@ -9,7 +9,7 @@
 
         .principal__img{
             @include sizes ( 100%, 100%);
-            background-image: url(../imagenes/principal__img.jpg);
+            background-image: url(../imagenes/principal__img2.png);
             background-size: cover;
             z-index: -10;
         }
@@ -23,6 +23,7 @@
             .principal__contenido__titulo{
                 padding-bottom: 8%;
                 width: 100%;
+                color: $crema;
             }
         }
     }
@@ -95,12 +96,15 @@
     .servicios {
         background-color:$naranja-claro;
         padding: 10% 3%;
+        background-image: url(../imagenes/principal__img4.png);
+        background-position: center;
 
         .servicios__box {
             display: grid;
             grid-template: repeat(4, auto) / auto;
             gap: 30px;
             justify-content: center;
+            
         
             .servicios__item {
                 @include sizes ( 300px, 250px);
@@ -153,11 +157,13 @@
     .cotizacion{
         @include sizes (100%, 565px);
         background-image: url(../imagenes/cotizacion.png);
-        background-size: contain;
+        background-size: cover;
+        background-position: 50% 10%;
 
         .cotizacion__box{
             @include sizes (100%, 40%);
             @include centrarHijos;
+
         }
     }
 
@@ -253,7 +259,9 @@
 
     /*--------------------------Servicios------------------------------------------------------------------*/
     .servicios {
-        padding: 1%; 
+        padding: 1%;
+        background-size: cover;
+        background-position: left;
 
         .servicios__box {
             grid-template: auto auto / auto auto;
