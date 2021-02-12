@@ -13,8 +13,7 @@ body {
 /*--------------------------generalidades------------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
   body {
-    font-size: 16px;
-    overflow: hidden; }
+    font-size: 16px; }
   h1, h2 {
     text-align: center;
     font-size: 30px;
