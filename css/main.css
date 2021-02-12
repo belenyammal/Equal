@@ -13,7 +13,8 @@ body {
 /*--------------------------generalidades------------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
   body {
-    font-size: 16px; }
+    font-size: 16px;
+    overflow: hidden; }
   h1, h2 {
     text-align: center;
     font-size: 30px;
@@ -240,6 +241,9 @@ body {
         padding-bottom: 8%;
         width: 100%;
         color: #f9efec; }
+      .principal .principal__contenido .principal__boton {
+        background-color: #f9efec;
+        color: #d9937e; }
   /*--------------------------informacion------------------------------------------------------------------*/
   .informacion__box {
     background-color: #EFD1C8; }
@@ -381,8 +385,11 @@ body {
     height: 100vh; }
   .principal .principal__contenido {
     width: 100%; }
-  .principal .principal__contenido__titulo {
-    padding-bottom: 3%; }
+    .principal .principal__contenido .principal__contenido__titulo {
+      padding-bottom: 3%; }
+    .principal .principal__contenido .principal__boton:hover {
+      background-color: #d9937e;
+      color: #f9efec; }
   /*--------------------------informacion__box------------------------------------------------------------------*/
   .informacion__box .informacion__contenido {
     justify-content: space-around; }

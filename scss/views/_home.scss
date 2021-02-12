@@ -2,28 +2,32 @@
 
 @media only screen and (min-width: $phone){
     /*--------------------------img principal------------------------------------------------------------------*/
-    .principal{
+    .principal {
         position: relative;
         @include sizes ( 100%, 100vh);
         overflow: hidden;
 
-        .principal__img{
+        .principal__img {
             @include sizes ( 100%, 100%);
             background-image: url(../imagenes/principal__img2.png);
             background-size: cover;
             z-index: -10;
         }
-        .principal__contenido{
+        .principal__contenido {
             position: absolute; 
             width: 300px;
             top: 30%; 
             padding: 3%;
             @include centrarHijos;
 
-            .principal__contenido__titulo{
+            .principal__contenido__titulo {
                 padding-bottom: 8%;
                 width: 100%;
                 color: $crema;
+            }
+            .principal__boton {
+                background-color: $crema;
+                color: $naranja-intermedio;
             }
         }
     }
@@ -208,10 +212,16 @@
         }
         .principal__contenido {
             width: 100%;
+
+            .principal__contenido__titulo {
+                padding-bottom: 3%;
+            }
+            .principal__boton:hover {
+                background-color: $naranja-intermedio;
+                color: $crema;
+            }
         }
-        .principal__contenido__titulo {
-            padding-bottom: 3%;
-        }
+        
     }
 
     /*--------------------------informacion__box------------------------------------------------------------------*/
